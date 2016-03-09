@@ -1,7 +1,8 @@
 # Angular2-Logger
 
-[![Join the chat at https://gitter.im/code-chunks/angular2-logger](https://badges.gitter.im/code-chunks/angular2-logger.svg)](https://gitter.im/code-chunks/angular2-logger?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Build Status](https://travis-ci.org/code-chunks/angular2-logger.svg?branch=master)](https://travis-ci.org/code-chunks/angular2-logger)
 [![npm version](https://badge.fury.io/js/angular2-logger.svg)](https://badge.fury.io/js/angular2-logger)
+[![Join the chat at https://gitter.im/code-chunks/angular2-logger](https://badges.gitter.im/code-chunks/angular2-logger.svg)](https://gitter.im/code-chunks/angular2-logger?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/code-chunks/angular2-logger/master/LICENSE)
 [![Support](https://supporter.60devs.com/api/b/cjv93jwfwck3yp8z2mn1d9gay)](https://supporter.60devs.com/give/cjv93jwfwck3yp8z2mn1d9gay)
 
@@ -135,7 +136,7 @@ You can also override the default configuration options by extending the Options
         Logger
     ]);
 
-Note: Class Names like Options and Level might be too common, if you get a conflict you can rename them like this:
+Class names like `Options` and `Level` might be too common, if you get a conflict you can rename them like this:
 
     import { Logger, Options as LoggerOptions, Level as LoggerLevel } from "angular2-logger/logger";
 
