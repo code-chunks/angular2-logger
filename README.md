@@ -35,6 +35,8 @@ If you are following the [Angular 2's Quickstart Guide](https://angular.io/docs/
     <!-- Add the following line to the list of scripts: -->
     <script src="node_modules/angular2-logger/bundles/angular2-logger.js"></script>
 
+Note: `angular2-logger/bundles/angular2-logger.min.js` is also available for use in production.
+
 Inject the logger into your objects and use it.
 
     @Component({
@@ -162,15 +164,15 @@ Done.
 - <del>Add a `Level.OFF` that turns off the logger</del>.
 - <del>Support different loaders and modes</del>.
 - <del>Add a basic demo.</del>
-- Minify dist files.
+- <del>Minify bundle.</del>
 - Ability to add logging time to the messages.
 - Lazy Logging.
 - Appenders.
-- Unit Testing.
 - Support named loggers.
 - Message Layout Feature.
 - No coding required Dashboard UI to handle loggers.
 
+[comment]: <> ( TODO: Unit Testing. )
 [comment]: <> ( TODO: Fix tsconfig.json when #5980 https://github.com/Microsoft/TypeScript/pull/5980 gets implemented. )
 
 ## LICENSE

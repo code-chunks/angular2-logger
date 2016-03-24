@@ -1,5 +1,5 @@
 import {Component} from 'angular2/core';
-import {Logger} from "angular2-logger/core";
+import {Logger, Level} from "angular2-logger/core";
 
 @Component({
     selector: "logger-app",
@@ -9,12 +9,12 @@ import {Logger} from "angular2-logger/core";
 
         <h3>Change the Logger's priority level</h3>
         
-        <button (click)="setLevel(0)"> Off </button>
-        <button (click)="setLevel(1)"> Error </button>
-        <button (click)="setLevel(2)"> Warning </button>
-        <button (click)="setLevel(3)"> Info </button>
-        <button (click)="setLevel(4)"> Debug </button>
-        <button (click)="setLevel(5)"> Log </button>
+        <button (click)="setLevel( Level.OFF )"> Off </button>
+        <button (click)="setLevel( Level.ERROR )"> Error </button>
+        <button (click)="setLevel( Level.WARNING )"> Warning </button>
+        <button (click)="setLevel( Level.INFO )"> Info </button>
+        <button (click)="setLevel( Level.DEBUG )"> Debug </button>
+        <button (click)="setLevel( Level.LOG )"> Log </button>
         
         <h3>Watch their effects in the console</h3>
 
@@ -29,6 +29,8 @@ import {Logger} from "angular2-logger/core";
 })
 export class LoggerAppComponent{
 
+    Level = Level;
+
     constructor(public logger:Logger){}
 
     logMsgs(){
@@ -39,7 +41,7 @@ export class LoggerAppComponent{
         this.logger.log('This is a priority level 5 log message...');
     }
 
-    setLevel(level){
+    setLevel(level:Level){
         this.logger.level = level;
     }
 

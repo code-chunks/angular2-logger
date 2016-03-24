@@ -10,18 +10,22 @@
   "scripts": {
     "tsc": "tsc",
     "typings": "typings",
+    "uglifyjs": "uglifyjs",
     "tslint": "tslint *.ts src/**/*.ts",
     "lint": "npm run tslint",
+    "minify" : "uglifyjs -o bundles/angular2-logger.min.js bundles/angular2-logger.js",
     "prepublish": "npm run build",
     "clean": "rimraf *.js *.js.map *.d.ts app/**/*.js app/**/*.js.map app/**/*.d.ts dist bundles",
     "precompile": "typings install",
-    "compile": "npm run compile:cjs && npm run compile:es6",
+    "compile": "npm run compile:bundle && npm run compile:cjs && npm run compile:es6",
+    "compile:bundle": "tsc",
     "compile:cjs": "tsc -t ES5 --sourceMap --experimentalDecorators --emitDecoratorMetadata --moduleResolution node --declaration core.ts typings/browser",
     "compile:es6": "tsc -t ES6 --sourceMap --experimentalDecorators --emitDecoratorMetadata --moduleResolution node core.ts --outDir dist/es6",
     "pretest": "npm run lint",
     "test": "echo tests pending...",
     "prebuild": "npm run clean && npm run compile && npm run test",
-    "build": "echo minify pending... && echo Build Successful."
+    "build": "npm run minify",
+    "postbuild": "echo Build Successful."
   },
   "keywords": [
     "angular",
@@ -76,6 +80,7 @@
     "tslint": "^3.6.0-dev.1",
     "typescript": "^1.8.9",
     "typings": "^0.7.8",
+    "uglify": "^0.1.5",
     "zone.js": "0.6.6"
   },
   "peerDependencies": {
