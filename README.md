@@ -173,8 +173,6 @@ Done.
 
 [comment]: <> ( TODO: Fix tsconfig.json when #5980 https://github.com/Microsoft/TypeScript/pull/5980 gets implemented. )
 
-*This step is only temporary until future, hopefully soon, improvements.
-
 ## LICENSE
 
 [MIT](https://opensource.org/licenses/MIT)
