@@ -173,6 +173,7 @@ Done.
 - No coding required Dashboard UI to handle loggers.
 
 [comment]: <> ( TODO: Unit Testing. )
+
 [comment]: <> ( TODO: Fix tsconfig.json when #5980 https://github.com/Microsoft/TypeScript/pull/5980 gets implemented. )
 
 ## LICENSE
