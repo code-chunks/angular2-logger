@@ -81,7 +81,7 @@
     "typescript": "^1.8.9",
     "typings": "^0.7.8",
     "uglify-js": "^2.6.2",
-    "zone.js": "0.6.6"
+    "zone.js": "0.6.10"
   },
   "peerDependencies": {
     "angular2": "^2.0.0-beta.12"
