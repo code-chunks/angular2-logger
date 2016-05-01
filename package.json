@@ -79,7 +79,7 @@
     "systemjs": "0.19.24",
     "tslint": "^3.6.0-dev.1",
     "typescript": "^1.8.9",
-    "typings": "^0.7.8",
+    "typings": "^0.8.0",
     "uglify-js": "^2.6.2",
     "zone.js": "0.6.12"
   },
