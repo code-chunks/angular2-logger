@@ -1,4 +1,4 @@
-import {provide} from "angular2/core";
+import {provide} from "@angular/core";
 import {Options, Logger} from "./app/core/logger";
 import {Level} from "./app/core/level";
 

@@ -1,4 +1,4 @@
-import {Injectable, Optional} from "angular2/core";
+import {Injectable, Optional} from "@angular/core";
 import {Level} from "./level";
 
 /**
