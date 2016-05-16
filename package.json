@@ -83,7 +83,7 @@
     "systemjs": "0.19.27",
     "tslint": "^3.8.1",
     "typescript": "^1.8.9",
-    "typings": "^0.8.1",
+    "typings": "^1.0.2",
     "uglify-js": "^2.6.2",
     "rxjs": "5.0.0-beta.6"
   },
