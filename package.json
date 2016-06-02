@@ -2,7 +2,8 @@
   "name": "angular2-logger",
   "version": "0.3.0",
   "description": "A Log4j inspired Logger for Angular 2.",
-  "main": "logger.js",
+  "main": "core.js",
+  "typings": "core.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/code-chunks/angular2-logger"
