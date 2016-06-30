@@ -63,7 +63,7 @@ In order to see all of the messages you just need to change the logger message h
     
 - Or using one of the predefined configuration providers:
 
-        import {Logger} from "angular2-logger";
+        import {LOG_LOGGER_PROVIDERS} from "angular2-logger/core";
        
         bootstrap( App, [ LOG_LOGGER_PROVIDERS ]);
 
