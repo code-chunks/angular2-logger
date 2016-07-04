@@ -32,7 +32,7 @@ This is a work in progress and is not ready for production, use with care, the A
 
 3. Setup the Provider.
 
-        import {Logger} from "angular2-logger/core";
+        import {Logger} from "angular2-logger";
 
         bootstrap( App, [ Logger ]);
 
@@ -85,7 +85,7 @@ If you want the logger to keep this setting changed, store it in the localStorag
 
 If the Providers included don't meet your needs you can configure the default logger configuration by Providing custom properties:
 
-    import { Logger, Options, Level } from "angular2-logger/core";
+    import { Logger, Options, Level } from "angular2-logger";
 
     bootstrap(AppComponent,[
         //<Options> casting is optional, it'll help you with type checking if using an IDE.
@@ -138,7 +138,7 @@ You can also override the default configuration options by extending the Options
 
 Class names like `Options` and `Level` might be too common, if you get a conflict you can rename them like this:
 
-    import { Logger, Options as LoggerOptions, Level as LoggerLevel } from "angular2-logger/core";
+    import { Logger, Options as LoggerOptions, Level as LoggerLevel } from "angular2-logger";
 
     bootstrap(AppComponent,[
         provide( LoggerOptions,{ useValue: {
