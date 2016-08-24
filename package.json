@@ -80,7 +80,7 @@
     "zone.js": "^0.6.12",
     "reflect-metadata": "0.1.8",
     "rimraf": "^2.5.2",
-    "systemjs": "0.19.31",
+    "systemjs": "0.19.34",
     "tslint": "^3.8.1",
     "typescript": "^1.8.9",
     "typings": "^1.0.3",
