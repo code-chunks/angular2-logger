@@ -8,13 +8,14 @@
         "module": "commonjs",
         "moduleResolution": "node",
 
-        "outDir": ".",
+        "outDir": "./dist/es5",
 
         "rootDir": ".",
         "sourceMap": true,
         "inlineSources": true,
 //        "lib": ["es6", "dom"],
-        "target": "es5"
+        "target": "es5",
+        "declaration": true
     },
     "files": [
         "core.ts",
