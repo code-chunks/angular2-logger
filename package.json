@@ -72,7 +72,7 @@
   "dependencies": {},
   "devDependencies": {
     "rimraf": "^2.5.2",
-    "tslint": "^3.8.1",
+    "tslint": "^4.0.2",
     "typescript": "^2.0.2",
     "typings": "^2.0.0",
     "uglify-js": "^2.6.2",
