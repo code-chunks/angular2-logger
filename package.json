@@ -75,7 +75,7 @@
     "tslint": "^4.0.2",
     "typescript": "^2.0.2",
     "typings": "^2.0.0",
-    "uglify-js": "^2.6.2",
+    "uglify-js": "^2.8.3",
     "@angular/common": "^2.0.0",
     "@angular/compiler": "^2.0.0",
     "@angular/core": "^2.0.0",
