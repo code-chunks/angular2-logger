@@ -76,15 +76,15 @@
     "typescript": "2.2.1",
     "typings": "^2.0.0",
     "uglify-js": "^2.6.2",
-    "@angular/common": "2.4.5",
-    "@angular/compiler": "2.4.5",
-    "@angular/core": "2.4.5",
-    "@angular/platform-browser": "2.4.5",
-    "@angular/platform-browser-dynamic": "2.4.5",
+    "@angular/common": "2.4.9",
+    "@angular/compiler": "2.4.9",
+    "@angular/core": "2.4.9",
+    "@angular/platform-browser": "2.4.9",
+    "@angular/platform-browser-dynamic": "2.4.9",
     "core-js": "^2.4.1",
     "rxjs": "5.2.0",
-    "systemjs": "0.19.41",
-    "zone.js": "^0.7.4"
+    "systemjs": "0.20.9",
+    "zone.js": "^0.8.0"
   },
   "peerDependencies": {
     "@angular/common": "2.4.5",
