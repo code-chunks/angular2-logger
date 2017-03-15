@@ -181,23 +181,6 @@ Class names like `Options` and `Level` might be too common, if you get a conflic
     })
     ...
 
-#### Angular Universal
-
-To use it with Angular Universal add angular2-logger to App.module normaly and in node.module provide these custom options.   
-
-```javascript
-import { Options } from "angular2-logger/core";
-
-@NgModule({
-  bootstrap: [ AppComponent ],
-  imports: [ AppModule, ... ],
-  providers: [
-    { provide: Options, useValue: { global: false, store: false } }, // stop angular2-logger from defining global variables.
-  ]
-})
-```
-
-
 ## How you can help
 Filing issues is helpful but **pull requests** are even better!
 
