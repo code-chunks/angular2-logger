@@ -55,7 +55,7 @@ export class Logger {
 
         global && this.global();
 
-        if ( store ) this.store();
+        if ( store || this._loadLevel() ) this.store();
 
     }
 
