@@ -17,11 +17,11 @@ typings
 
 demos
 
-#tsconfig.json
+tsconfig.json
 
-#typings.json
+typings.json
 
 .travis.yml
 
 #TODO: Modify build process so it doesn't need this file at all.
-#core.ts
+core.ts
