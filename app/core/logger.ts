@@ -61,7 +61,7 @@ export class Logger {
 
     private _loadLevel(): Level {
         if(typeof localStorage === 'undefined'){
-            return Level.OFF;
+            return undefined;
         }else{
             return Number(localStorage.getItem( this._storeAs ));
         }
