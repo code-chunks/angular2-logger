@@ -108,7 +108,9 @@ export class Logger {
 
     unstore(): Logger {
         this._store = false;
-        localStorage.removeItem( this._storeAs );
+        if(typeof localStorage !== 'undefined'){
+            localStorage.removeItem( this._storeAs );
+        }
         return this;
     }
 
