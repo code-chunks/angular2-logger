@@ -59,9 +59,19 @@ export class Logger {
 
     }
 
-    private _loadLevel = (): Level => Number(localStorage.getItem( this._storeAs ));
+    private _loadLevel(): Level {
+        if(typeof localStorage === 'undefined'){
+            return undefined;
+        }else{
+            return Number(localStorage.getItem( this._storeAs ));
+        }
+    };
 
-    private _storeLevel(level: Level) { localStorage[ this._storeAs ] = level; }
+    private _storeLevel(level: Level) { 
+        if(typeof localStorage !== 'undefined'){
+            localStorage[ this._storeAs ] = level;
+        }
+    }
 
     error(message?: any, ...optionalParams: any[]) {
         this.isErrorEnabled() && console.error.apply( console, arguments );
@@ -98,7 +108,9 @@ export class Logger {
 
     unstore(): Logger {
         this._store = false;
-        localStorage.removeItem( this._storeAs );
+        if(typeof localStorage !== 'undefined'){
+            localStorage.removeItem( this._storeAs );
+        }
         return this;
     }
 
