@@ -7,7 +7,8 @@
     "outDir": "./dist/es6",
     "rootDir": ".",
     "sourceMap": true,
-    "target": "es6"
+    "target": "es6",
+    "declaration": true
   },
   "files": [
     "core.ts"
