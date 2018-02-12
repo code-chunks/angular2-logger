@@ -1,6 +1,6 @@
 {
   "name": "angular2-logger",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "A Log4j inspired Logger for Angular 2.",
   "repository": {
     "type": "git",
