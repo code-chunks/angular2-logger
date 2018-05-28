@@ -215,6 +215,12 @@ The codebase was updated to handle the breaking changes on Angular2's Release Ca
 - Quickstart guide now follows the pattern in Angular 2's Quickstart to add the references to other libs in `systemjs.config.js`. 
 However if you still want to do it the old way by adding the system bundle, you can still do so, except now its called `bundles/angular2-logger.sys.min.js`. 
 
+## Frequently Asked Questions
+
+- I'm debugging in Chrome and can't see the log messages written by the `Level.DEBUG`? 
+    - By default, Chrome does not display the `Debug` level message. Look around for a dropdown to update the default displayed log levels.
+
+
 ## LICENSE
 
 [MIT](https://opensource.org/licenses/MIT)
